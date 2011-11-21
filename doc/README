@@ -1,0 +1,80 @@
+BC UpdateCache extension README
+
+What is the BC UpdateCache extension?
+================================
+
+BC UpdateCache is a true eZ publish extension
+that provides module view to update node cache for eZ Publish
+
+This extension is created as an automated way to regenerate
+caches after you have cleared all cache. The module view
+/updatecache/cache performes multiple GET requests to 
+all pages in a subtree specified when starting the module.
+This means you do not need to manually click though all
+the pages to generate caches for them.
+
+
+BC UpdateCache version
+=======================
+
+The current version of BC UpdateCache is 0.0.2
+Last Major update: November 21, 2011
+
+You can find details about changes for this
+version in doc/changelogs/CHANGELOG-0.0.2
+
+
+License
+=======
+
+This software is licensed under the GNU General Public License.
+
+The complete license agreement is included in the doc/LICENSE file.
+
+For more information or questions please contact license@brookinsconsulting.com
+
+
+Requirements
+============
+
+The following requirements exists for using BC UpdateCache extension:
+
+o  eZ publish version:
+
+   Make sure you use eZ publish version 4.x or higher. eZ Publish 4.6+ is recommended.
+
+o  PHP CURL extension is required
+
+   Make sure you have the PHP extension for Curl installed
+
+o  PHP version:
+
+   Make sure you have PHP 5.x or higher.
+
+
+Installation
+============
+
+Details on installing BC UpdateCache located in the file doc/INSTALL.
+
+
+Usage
+============
+
+Use the admin siteaccess tab, 'Update Cache' to update site cache via curl.
+
+Troubleshooting
+===============
+
+1. Read the FAQ
+   ------------
+
+   Some problems are more common than others. The most common ones
+   are listed in the the FAQ.
+
+2. Support
+   -------
+
+   If you have find any problems not handled by this document or the FAQ you
+   can contact Brookins Consulting through the support system:
+   http://brookinsconsulting.com/contact

@@ -1,0 +1,103 @@
+BC UpdateCache extension INSTALL
+
+Introduction
+============
+
+1. What is the BC UpdateCache extension?
+   ------------------------------------------------
+
+   BC UpdateCache is a true eZ publish extension that
+   provides commandline script to create top level node
+   or move a node to the top level root node.
+
+   For more information about this extension please read the README file.
+
+1. License
+   -------
+
+   BC UpdateCache is licensed under the GNU General Public License.
+
+   The GNU GPL gives you the right to use, modify and redistribute
+   BC UpdateCache under certain conditions. The GNU GPL licence
+   is distributed with the software, see the file doc/LICENCE.
+   It is also available at http://www.gnu.org/licenses/gpl.txt
+
+   Using BC UpdateCache under the terms of the GNU GPL is free (as in freedom).
+
+   For more information or questions please contact
+   license@brookinsconsulting.com
+
+2. Requirements
+   ------------
+
+   The following requirements exists for using BC UpdateCache extension:
+
+   o  eZ publish version:
+
+      Make sure you use eZ publish version 4.x or higher.
+
+      eZ Publish 2011.10 (4.6+) is recommended.
+
+   o  PHP version:
+
+      Make sure you have PHP 5.x or higher.
+
+
+Getting eZ Publish
+==================
+
+You can download a version of eZ Publish from share.ez.no,
+you will find the various versions at:
+
+http://share.ez.no/download
+
+NOTE: You will only require eZ Publish 4.x or higher (if you have a more recent version)
+
+Information on the installation of eZ publish can be found at:
+http://doc.ez.no/eZ-Publish/Technical-manual/4.6/Installation
+and
+http://doc.ez.no
+http://share.ez.no
+
+
+Installing BC UpdateCache extension
+==============================================
+
+1. Copy the package into the `extension' directory
+   in the root of your eZ publish installation.
+
+2. Unpack the files in the distribution. The command
+   necessary is depends on the file you downloaded.
+   [tar.gz]:
+   $ tar -zxvf bcupdatecache-0_0_2.tar.gz
+   [zip]:
+   $ unzip bcupdatecache-0_0_2.tar.zip
+
+3. Activate the extension in eZ Publish.
+
+4. Regenerate autoloads and clear caches.
+
+5. The "Update cache" should now show up as a top menu tab in the administration interface.
+
+
+Usage
+==============================
+
+Use the admin siteaccess tab, 'Update Cache' to update site cache via curl.
+
+
+Troubleshooting
+===============
+
+1. Read the FAQ
+   ------------
+
+   Some problems are more common than others. The most common ones are listed
+   in the the FAQ.
+
+2. Support
+   -------
+
+   If you have find any problems not handled by this document or the FAQ you
+   can contact Brookins Consulting trough the support system:
+   http://brookinsconsulting.com/contact
