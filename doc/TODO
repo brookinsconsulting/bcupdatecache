@@ -14,5 +14,12 @@ please contact info@brookinsconsulting.com
 
 Features for consideration:
 
+- Add admin siteaccess left menu part
+- Add cronjob part to generate cache in a more automated way
+- Add command line script to generate as well
+- Add workflow events to clear caches and update them
+- Expand execution limitation of one role id to many role ids
+- Move away from ini settings to module policies
+- Updated look and design in templates
 - Any other changes not mentioned here 
 

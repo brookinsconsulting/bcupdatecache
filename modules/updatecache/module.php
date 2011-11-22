@@ -1,6 +1,6 @@
 <?php
 /**
- * File containing the module.php module configuration file.
+ * File containing the updatecache module configuration file, module.php
  *
  * @copyright Copyright (C) 1999 - 2011 Brookins Consulting. All rights reserved.
  * @license http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2 (or later)

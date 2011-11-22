@@ -6,7 +6,7 @@ Introduction
 1. What is the BC UpdateCache extension?
    ------------------------------------------------
 
-   BC UpdateCache is a true eZ publish extension that
+   BC UpdateCache is a true eZ Publish extension that
    provides commandline script to create top level node
    or move a node to the top level root node.
 
@@ -30,17 +30,19 @@ Introduction
 2. Requirements
    ------------
 
-   The following requirements exists for using BC UpdateCache extension:
+    The following requirements exists for using BC UpdateCache extension:
 
-   o  eZ publish version:
+    o  eZ Publish version:
 
-      Make sure you use eZ publish version 4.x or higher.
+       Make sure you use eZ publish version 4.x or higher. eZ Publish 4.6+ is recommended.
 
-      eZ Publish 2011.10 (4.6+) is recommended.
+    o  PHP CURL extension is required
 
-   o  PHP version:
+       Make sure you have the PHP CURL extension installed and available
 
-      Make sure you have PHP 5.x or higher.
+    o  PHP version:
+
+       Make sure you have PHP 5.x or higher.
 
 
 Getting eZ Publish
@@ -53,7 +55,7 @@ http://share.ez.no/download
 
 NOTE: You will only require eZ Publish 4.x or higher (if you have a more recent version)
 
-Information on the installation of eZ publish can be found at:
+Information on the installation of eZ Publish can be found at:
 http://doc.ez.no/eZ-Publish/Technical-manual/4.6/Installation
 and
 http://doc.ez.no
@@ -64,7 +66,7 @@ Installing BC UpdateCache extension
 ==============================================
 
 1. Copy the package into the `extension' directory
-   in the root of your eZ publish installation.
+   in the root of your eZ Publish installation.
 
 2. Unpack the files in the distribution. The command
    necessary is depends on the file you downloaded.
@@ -83,7 +85,7 @@ Installing BC UpdateCache extension
 Usage
 ==============================
 
-Use the admin siteaccess tab, 'Update Cache' to update site cache via curl.
+Use the admin siteaccess tab, 'Update Cache' to update site cache via PHP CURL extension.
 
 
 Troubleshooting

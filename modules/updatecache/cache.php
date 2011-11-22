@@ -14,15 +14,40 @@
 $Module = $Params['Module'];
 
 /**
+ * Fetch bcupdatecache.ini settings values required by module view
+ */
+$restrictCacheGenerationByRoleID = eZINI::instance( 'bcupdatecache.ini' )->variable( 'BCUpdateCacheSettings', 'UpdateCacheChecksForUserRole' ) == 'enabled' ? true : false;
+$restrictCacheGenerationRoleID = is_numeric( eZINI::instance( 'bcupdatecache.ini' )->variable( 'BCUpdateCacheSettings', 'UpdateCacheChecksForRoleID' ) ) ? eZINI::instance( 'bcupdatecache.ini' )->variable( 'BCUpdateCacheSettings', 'UpdateCacheChecksForRoleID' ) : 2;
+
+/**
+ * Fetch current user and related attributes
+ */
+$currentUser = eZUser::currentUser();
+$UserID = $currentUser->attribute( 'contentobject_id' );
+$UserRoleIDList = $currentUser->attribute( 'role_id_id' );
+
+/**
+ * Give the unknown Anonymous users a frienly kernel access denied error
+ * also give authenticated users without the required role permissions,
+ * provided in the bcupdatecache.ini settings,
+ * a frienly kernel access denied error as well.
+ * Better safe than sorry in this regard
+ */
+if( $currentUser->isAnonymous() == true or ( $restrictCacheGenerationByRoleID == true && !in_array( $restrictCacheGenerationRoleID, $UserRoleIDList ) ) )
+{
+    return $Module->handleError( eZError::KERNEL_ACCESS_DENIED, 'kernel' );
+}
+
+/**
  * Default class instances
  */
-$ini = eZINI::instance();
 $http = eZHTTPTool::instance();
 $tpl = eZTemplate::factory();
 
 /**
- * Site url
+ * Fetch site.ini settings for Site url
  */
+$ini = eZINI::instance();
 $siteURL = 'http://' . $ini->variable( 'SiteSettings', 'SiteURL' );
 
 /**
