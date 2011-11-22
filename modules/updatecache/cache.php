@@ -24,7 +24,7 @@ $restrictCacheGenerationRoleID = is_numeric( eZINI::instance( 'bcupdatecache.ini
  */
 $currentUser = eZUser::currentUser();
 $UserID = $currentUser->attribute( 'contentobject_id' );
-$UserRoleIDList = $currentUser->attribute( 'role_id_id' );
+$UserRoleIDList = $currentUser->attribute( 'role_id_list' );
 
 /**
  * Give the unknown Anonymous users a frienly kernel access denied error
