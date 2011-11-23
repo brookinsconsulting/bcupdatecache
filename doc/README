@@ -63,6 +63,11 @@ Usage
 
 Use the admin siteaccess tab, 'Update Cache' to update site cache via PHP CURL extension.
 
+By default the admin gui update cache features are restricted to members of of the Role 'Administrator'
+
+See extension settings to customize the role ID which is required,
+extension/bcupdatecache/settings/bcupdatecache.ini.append.php
+
 
 Troubleshooting
 ===============

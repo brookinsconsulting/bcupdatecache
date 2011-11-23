@@ -18,8 +18,14 @@ Features for consideration:
 - Add cronjob part to generate cache in a more automated way
 - Add command line script to generate as well
 - Add workflow events to clear caches and update them
+- Refactor / refine functionality associated with cache generation
+  into a more reusable and user friendly solution to allow for
+  simpler reuse of the surrounding functionality provided by this extension
+- Add custom admin menu templates linking object id to
+  a custom module view to generate the related cache on
+  demand for a given object ID and redirect back to the
+  referring page / object primary node in admin, etc ...
 - Expand execution limitation of one role id to many role ids
 - Move away from ini settings to module policies
 - Updated look and design in templates
 - Any other changes not mentioned here 
-
