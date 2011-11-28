@@ -108,7 +108,7 @@ if ( $http->hasPostVariable( 'BrowseButton' ) )
 }
 
 /**
- * Test for selected nodes from browse selection request
+ * Test for selected nodes from browse selection request to include in parameters
  */
 if ( $http->hasPostVariable( 'SelectedNodeIDArray' ) &&
      !$http->hasPostVariable( 'BrowseCancelButton' ) )

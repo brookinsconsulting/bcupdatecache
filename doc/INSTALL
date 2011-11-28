@@ -10,7 +10,7 @@ Introduction
    provides commandline script to create top level node
    or move a node to the top level root node.
 
-   For more information about this extension please read the README file.
+   For more information about this extension please read the doc/README file.
 
 1. License
    -------
@@ -18,8 +18,8 @@ Introduction
    BC UpdateCache is licensed under the GNU General Public License.
 
    The GNU GPL gives you the right to use, modify and redistribute
-   BC UpdateCache under certain conditions. The GNU GPL licence
-   is distributed with the software, see the file doc/LICENCE.
+   BC UpdateCache under certain conditions. The GNU GPL license
+   is distributed with the software, see the file doc/LICENSE.
    It is also available at http://www.gnu.org/licenses/gpl.txt
 
    Using BC UpdateCache under the terms of the GNU GPL is free (as in freedom).
@@ -34,7 +34,7 @@ Introduction
 
     o  eZ Publish version:
 
-       Make sure you use eZ publish version 4.x or higher. eZ Publish 4.6+ is recommended.
+       Make sure you use eZ Publish version 4.x or higher. eZ Publish 4.6+ is recommended.
 
     o  PHP CURL extension is required
 
@@ -99,7 +99,7 @@ Troubleshooting
    ------------
 
    Some problems are more common than others. The most common ones are listed
-   in the the FAQ.
+   in the the doc/FAQ.
 
 2. Support
    -------
